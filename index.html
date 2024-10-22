@@ -22,9 +22,25 @@
         <a class="header__link" href="#contact">Contact</a>
       </nav>
       <div class="header__button-container">
-        <button class="btn">Login</button>
-        <button class="btn">Enter App</button>
+        <button class="btn header_btn">Login</button>
+        <button class="btn header_btn">Enter App</button>
       </div>
+      <button class="header__bars">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="size-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
+      </button>
     </header>
     <section class="hero container">
       <h1 class="hero__title">IT solutions and services.</h1>
@@ -32,7 +48,7 @@
         Ichitech aims to provide innovative and efficient technological
         solutions to meet the needs of their clients.
       </p>
-      <button class="hero__button btn">Learn More</button>
+      <a href="#features" class="btn hero__btn">Learn More</a>
     </section>
     <section class="pricing container">
       <h2 class="pricing__title">Simple Transparent Pricing</h2>
@@ -141,7 +157,7 @@
         get back to you as soon as possible.
       </p>
       <a
-        class="btn"
+        class="btn contact__btn"
         href="mailto:juanernestosaavedra@outlook.com"
         target="_blank"
         rel="noopener norefer"
@@ -149,7 +165,7 @@
       >
     </section>
     <footer class="footer container">
-      <h3 class="footer__title">Ichitech &copy;</h3>
+      <h2 class="footer__title">Ichitech &copy;</h2>
     </footer>
     <!-- <div style="height: 100vh"></div> -->
   </body>

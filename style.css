@@ -58,7 +58,49 @@ button {
     justify-content: flex-end;
 }
 
+.header__bars {
+    display: none;
+    width: 1.5rem;
+    height: 1.5rem;
 
+}
+
+@media (max-width:891px) {
+    .header__title {
+        font-size: 1.2rem;
+
+    }
+
+    .header__link {
+        font-size: 0.8rem;
+    }
+
+    .header_btn {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width:713px) {
+    .header__menu {
+        display: none;
+    }
+
+    .header__button-container {
+        display: none;
+    }
+
+    .header__bars {
+        display: block;
+    }
+
+    .header__title {
+        flex: 0 1 auto;
+    }
+
+    .header {
+        justify-content: space-between;
+    }
+}
 
 /* hero section */
 
@@ -86,8 +128,53 @@ button {
     margin: 2rem auto;
 }
 
+@media (max-width:891px) {
+    .hero__title {
+        font-size: 3rem;
+
+    }
+
+    .hero__text {
+        font-size: 1rem;
+        margin: 1.5rem auto;
+    }
+}
+
+@media (max-width:713px) {
+    .hero__title {
+        font-size: 2.5rem;
+    }
+
+    .hero__text {
+        font-size: 0.9rem;
+        margin: 1rem auto;
+    }
+
+    .hero__button {
+        font-size: 0.9rem;
+    }
+
+    .hero {
+        margin-top: 5rem;
+    }
+}
+
+@media (max-width:495px) {
+    .hero__title {
+        font-size: 2rem;
+    }
+
+}
+
+@media (max-width:396px) {
+    .hero__title {
+        font-size: 1.6rem;
+    }
+
+}
 
 /* pricing */
+
 .pricing {
     margin-top: 10rem;
 
@@ -110,6 +197,7 @@ button {
 .pricing__container {
     display: flex;
     gap: 2rem;
+    flex-wrap: wrap;
 }
 
 .pricing__box {
@@ -118,6 +206,7 @@ button {
     padding: 2rem;
     border-radius: 20px;
     flex: 1;
+    min-width: 400px;
 }
 
 .pricing__price {
@@ -151,7 +240,61 @@ button {
     font-size: 0.9rem;
 }
 
-/* Featuers section */
+@media (max-width:891px) {
+    .pricing__title {
+        font-size: 2rem;
+    }
+
+    .pricing__desc {
+        font-size: 1rem;
+    }
+
+    .pricing__price {
+        font-size: 1.5rem;
+    }
+
+    .pricing__plan-desc {
+        font: 0.9rem;
+    }
+}
+
+@media (max-width:713px) {
+    .pricing {
+        margin-top: 5rem;
+    }
+
+    .pricing__title {
+        font-size: 1.5rem;
+    }
+
+    .pricing__desc {
+        font-size: 0.9rem;
+        margin: 0.5rem 0
+    }
+
+    .pricing__plan-desc {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width:495px) {
+    .pricing__title {
+        font-size: 1.3rem;
+    }
+
+    .pricing__box {
+        min-width: 290px;
+    }
+}
+
+@media (max-width:396px) {
+    .pricing__title {
+        font-size: 1.1rem;
+    }
+
+}
+
+/* Features section */
 
 .features {
     margin-top: 10rem;
@@ -193,12 +336,61 @@ button {
     margin-top: 1rem;
 }
 
+@media (max-width:891px) {
+    .features__title {
+        font-size: 2rem;
+    }
+
+    .features__desc {
+        font-size: 1rem;
+        margin: 0.5rem auto;
+    }
+}
+
+@media (max-width:713px) {
+    .features {
+        margin-top: 5rem;
+    }
+
+    .features__title {
+        font-size: 1.5rem;
+    }
+
+    .features__desc {
+        font-size: 0.9rem;
+    }
+
+    .features__box-title {
+        font-size: 1rem;
+    }
+
+    .features__box-desc {
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+    }
+}
+
+@media (max-width:495px) {
+
+    .features__title {
+        font-size: 1.3rem;
+    }
+
+
+}
+
+@media (max-width:396px) {
+    .features__title {
+        font-size: 1.1rem;
+    }
+}
+
 /* contact */
 
 
 .contact {
     text-align: center;
-    /* wow how this is clever*/
+
     margin-top: 10rem;
 
 }
@@ -218,6 +410,50 @@ button {
     max-width: 60ch;
     margin-inline: auto;
     margin: 2rem auto;
+}
+
+@media (max-width:891px) {
+    .contact__title {
+        font-size: 2rem;
+    }
+
+    .contact__desc {
+        font-size: 1rem;
+        margin: 0.5rem auto;
+    }
+}
+
+@media (max-width:713px) {
+    .contact {
+        margin-top: 5rem;
+    }
+
+    .contact__title {
+        font-size: 1.5rem;
+    }
+
+    .contact__desc {
+        font-size: 0.9rem;
+    }
+
+    .contact__btn {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width:495px) {
+
+    .contact_title {
+        font-size: 1.3rem;
+    }
+
+
+}
+
+@media (max-width:396px) {
+    .contact__title {
+        font-size: 1.1rem;
+    }
 }
 
 /* footer */
